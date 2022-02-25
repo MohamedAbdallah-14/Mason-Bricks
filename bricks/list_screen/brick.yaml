@@ -1,4 +1,7 @@
 name: list_screen
-description: A new brick created with the Mason CLI.
+description: Create a new list screen.
+version: 0.1.0+1
 vars:
-  - name
+  name:
+    type: string
+    default: "list_screen"

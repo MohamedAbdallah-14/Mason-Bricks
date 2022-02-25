@@ -1,5 +1,7 @@
 name: parameter
-description: A new brick created with the Mason CLI.
+description: Create a new parameter.
+version: 0.1.0+1
 vars:
-  - feature
-  - name
+  name:
+    type: string
+    default: "parameter"

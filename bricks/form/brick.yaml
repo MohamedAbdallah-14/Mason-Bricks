@@ -1,4 +1,7 @@
 name: form
-description: A new brick created with the Mason CLI.
+description: Create a new form with json files for all form feature files.
+version: 0.1.0+1
 vars:
-  - name
+  name:
+    type: string
+    default: "form"

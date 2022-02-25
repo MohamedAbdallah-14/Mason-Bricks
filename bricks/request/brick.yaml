@@ -1,6 +1,7 @@
 name: request
-description: A new brick created with the Mason CLI.
+description: Create a new request.
+version: 0.1.0+1
 vars:
-  - feature
-  - name
-  - path
+  name:
+    type: string
+    default: "request"

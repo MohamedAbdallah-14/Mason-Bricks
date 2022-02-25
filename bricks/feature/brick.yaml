@@ -1,4 +1,7 @@
 name: feature
-description: A new brick created with the Mason CLI.
+description: Create a new feature files and direcotries.
+version: 0.1.0+1
 vars:
-  - feature
+  name:
+    type: string
+    default: "feature"

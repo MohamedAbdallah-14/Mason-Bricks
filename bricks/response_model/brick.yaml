@@ -1,6 +1,7 @@
 name: response_model
-description: A new brick created with the Mason CLI.
+description: Create a new response model.
+version: 0.1.0+1
 vars:
-  - feature
-  - name
-  - parameters
+  name:
+    type: string
+    default: "response_model"

@@ -1,4 +1,7 @@
 name: enum
-description: A new brick created with the Mason CLI.
+description: Create a new enum.
+version: 0.1.0+1
 vars:
-  - name
+  name:
+    type: string
+    default: "enum"
