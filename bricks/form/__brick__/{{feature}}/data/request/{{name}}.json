@@ -1,0 +1,8 @@
+{
+  "app": "{{app}}",
+  "feature": "{{feature}}",
+  "name": "{{name}}",
+  "request_model": {{request_model}},
+  {{#request}}"path": "{{{path}}}",
+  {{#post}}"post": {{post}}{{/post}}{{#get}}"get": {{get}}{{/get}}{{#put}}"put": {{put}}{{/put}}{{#delete}}"delete": {{delete}}{{/delete}}{{/request}}
+}

@@ -1,0 +1,23 @@
+bricks:
+  parameter:
+    path: bricks/parameter
+  request_model:
+    path: bricks/request_model
+  response_model:
+    path: bricks/response_model
+  request:
+    path: bricks/request
+  repository:
+    path: bricks/repository
+  feature:
+    path: bricks/feature
+  cubit:
+    path: bricks/cubit
+  screen:
+    path: bricks/screen
+  form:
+    path: bricks/form
+  enum:
+    path: bricks/enum
+  list_screen:
+    path: bricks/list_screen

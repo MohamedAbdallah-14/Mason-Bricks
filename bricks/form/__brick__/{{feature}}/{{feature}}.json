@@ -1,0 +1,5 @@
+{
+  "app": "{{app}}",
+  "feature": "{{feature}}",
+  "new_feature": {{new_feature}}
+}

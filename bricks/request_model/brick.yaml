@@ -1,0 +1,6 @@
+name: request_model
+description: A new brick created with the Mason CLI.
+vars:
+  - feature
+  - name
+  - parameters

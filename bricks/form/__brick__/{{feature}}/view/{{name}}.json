@@ -1,0 +1,17 @@
+{
+  "app": "{{app}}",
+  "feature": "{{feature}}",
+  "name": "{{name}}",  
+  {{#form}}"form": {{form}},{{/form}}
+  {{#feature_list}}"feature_list": {{feature_list}},{{/feature_list}}
+  "request_model": {{request_model}}, {{#form}}
+  "parameters": [{{#request_model_parameters}}
+    {
+      "parameter": "{{parameter}}",
+      "field": "{{field}}",
+      "type": "{{{type}}}",
+      "custom": {{custom}},
+      "paths": [{{#paths}} {"path": "{{path}}"} {{/paths}}]
+    },{{/request_model_parameters}}
+  ] {{/form}}
+}

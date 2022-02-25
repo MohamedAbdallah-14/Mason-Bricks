@@ -1,0 +1,17 @@
+{{#request_model}}{
+  "app": "{{app}}",
+  "feature": "{{feature}}",
+  "name": "{{name}}",
+  "parameters": [{{#request_model_parameters}}
+    {
+      "parameter": "{{parameter}}",
+      "field": "{{field}}",
+      "type": "{{{type}}}",
+      "nullable": {{nullable}},
+      "custom": {{custom}},
+      {{#enum}}"enum": {{enum}},{{/enum}}
+      "paths": [{{#paths}} {"path": "{{path}}"} {{/paths}}]
+    },{{/request_model_parameters}}
+  ]
+}
+{{/request_model}}

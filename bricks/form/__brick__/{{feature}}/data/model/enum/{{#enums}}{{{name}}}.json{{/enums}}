@@ -1,0 +1,8 @@
+{
+  "feature": "{{feature}}",
+  "name": "{{enums.name}}",
+  "parameters": [ {{#enums.parameters}}
+    { "parameter": "{{parameter}}"},{{/enums.parameters}}
+  ]
+}
+

@@ -1,0 +1,6 @@
+{
+    "app": "{{app}}",
+    "feature": "{{feature}}",
+    "name": "{{name}}",
+    "request_model": {{request_model}}
+}

@@ -1,0 +1,5 @@
+{
+  "app": "{{app}}",
+  "feature": "{{feature}}",
+  "name": "{{custom_parameters.name}}"
+}

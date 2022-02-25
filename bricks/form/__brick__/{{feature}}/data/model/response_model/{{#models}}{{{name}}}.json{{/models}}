@@ -1,0 +1,17 @@
+{
+  "app": "{{app}}",
+  "feature":"{{feature}}",
+  "name": "{{models.name}}",
+  "response_model": {{models.response_model}},
+  "parameters": [ {{#models.parameters}}
+    {
+      "parameter": "{{parameter}}",
+      "field": "{{field}}",
+      "type": "{{{type}}}",
+      "custom": {{custom}},
+      "list": {{list}},
+      {{#fake_id}}"fake_id":{{fake_id}},{{/fake_id}}{{#fake_bool}}"fake_bool":{{fake_bool}},{{/fake_bool}}{{#fake_email}}"fake_email":{{fake_email}},{{/fake_email}}{{#fake_name}}"fake_name":{{fake_name}},{{/fake_name}}{{#fake_phone_number}}"fake_phone_number":{{fake_phone_number}},{{/fake_phone_number}}{{#fake_sentence}}"fake_sentence":{{fake_sentence}},{{/fake_sentence}}{{#fake_word}}"fake_word":{{fake_word}},{{/fake_word}}{{#fake_dateTime}}"fake_dateTime":{{fake_dateTime}},{{/fake_dateTime}}{{#fake_image}}"fake_image":{{fake_image}},{{/fake_image}}
+      
+    },{{/models.parameters}}
+  ]
+}
