@@ -1,6 +1,6 @@
 import 'dart:async';
 
-import 'package:zumra/core/data/api_manager.dart';
+import 'package:{{#snakeCase}}{{app}}{{/snakeCase}}/core/data/api_manager.dart';
 
 import 'package:dartz/dartz.dart';
 import 'package:flutter/material.dart';
@@ -204,7 +204,7 @@ Future<void> main() async {
               (value) => Left(
                 Failures.errorFailure(
                   errorStatus: ErrorStatus.authenticationError,
-                  error: MessageResponse(message: errorMessage),
+                  error: MessageResponseModel(message: errorMessage),
                 ),
               ),
             ),

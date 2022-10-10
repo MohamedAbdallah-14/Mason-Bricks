@@ -1,4 +1,4 @@
-import 'package:zumra/core/data/api_manager.dart';
+import 'package:{{#snakeCase}}{{app}}{{/snakeCase}}/core/data/api_manager.dart';
 
 {{#parameters}} {{#custom}} 
 import 'package:{{#snakeCase}}{{app}}{{/snakeCase}}/{{#snakeCase}}{{feature}}{{/snakeCase}}/data/model/{{#enum}}enum{{/enum}}{{#custom}}parameter{{/custom}}/{{#snakeCase}}{{parameter}}{{/snakeCase}}.dart'; {{/custom}} {{/parameters}} 

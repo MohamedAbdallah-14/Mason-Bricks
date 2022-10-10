@@ -1,4 +1,4 @@
-import 'package:zumra/core/data/api_manager.dart';
+import 'package:{{#snakeCase}}{{app}}{{/snakeCase}}/core/data/api_manager.dart';
 import 'package:mocktail/mocktail.dart';
 import 'package:{{#snakeCase}}{{app}}{{/snakeCase}}/{{#snakeCase}}{{feature}}{{/snakeCase}}/data/{{#snakeCase}}{{feature}}{{/snakeCase}}_repository.dart';
 

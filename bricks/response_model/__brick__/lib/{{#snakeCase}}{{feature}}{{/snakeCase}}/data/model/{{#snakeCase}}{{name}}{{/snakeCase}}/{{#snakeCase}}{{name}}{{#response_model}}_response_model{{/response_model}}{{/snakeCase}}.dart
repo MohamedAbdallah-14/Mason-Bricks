@@ -1,5 +1,5 @@
 import 'package:equatable/equatable.dart';
-{{#response_model}}import 'package:zumra/core/data/api_manager.dart';{{/response_model}}
+{{#response_model}}import 'package:{{#snakeCase}}{{app}}{{/snakeCase}}/core/data/api_manager.dart';{{/response_model}}
 
 class {{#pascalCase}}{{name}}{{/pascalCase}}{{#response_model}}ResponseModel{{/response_model}} extends Equatable {{#response_model}}implements ResponseModel {{/response_model}}{
   const {{#pascalCase}}{{name}}{{/pascalCase}}{{#response_model}}ResponseModel{{/response_model}}({ {{#parameters}}

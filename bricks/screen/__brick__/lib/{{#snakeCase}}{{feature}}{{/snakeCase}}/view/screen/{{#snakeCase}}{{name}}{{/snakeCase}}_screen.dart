@@ -1,6 +1,6 @@
 import 'dart:developer';
 
-import 'package:zumra/core/data/api_manager.dart';
+import 'package:{{#snakeCase}}{{app}}{{/snakeCase}}/core/data/api_manager.dart';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -59,7 +59,7 @@ class _Page extends StatelessWidget {
             final failure = state.failure;
             if (failure is ErrorFailure) {
               final error = failure.error;
-              if (error is MessageResponse) {
+              if (error is MessageResponseModel) {
                 Alert.instance.error(context, error.message);
               }
             } else if (failure != null) {

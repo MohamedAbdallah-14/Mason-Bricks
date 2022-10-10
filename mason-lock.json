@@ -1,0 +1,21 @@
+{
+  "bricks": {
+    "parameter": { "path": "/Users/abdullah/OldWork/Mason/bricks/parameter" },
+    "request_model": {
+      "path": "/Users/abdullah/OldWork/Mason/bricks/request_model"
+    },
+    "response_model": {
+      "path": "/Users/abdullah/OldWork/Mason/bricks/response_model"
+    },
+    "request": { "path": "/Users/abdullah/OldWork/Mason/bricks/request" },
+    "repository": { "path": "/Users/abdullah/OldWork/Mason/bricks/repository" },
+    "feature": { "path": "/Users/abdullah/OldWork/Mason/bricks/feature" },
+    "cubit": { "path": "/Users/abdullah/OldWork/Mason/bricks/cubit" },
+    "screen": { "path": "/Users/abdullah/OldWork/Mason/bricks/screen" },
+    "form": { "path": "/Users/abdullah/OldWork/Mason/bricks/form" },
+    "enum": { "path": "/Users/abdullah/OldWork/Mason/bricks/enum" },
+    "list_screen": {
+      "path": "/Users/abdullah/OldWork/Mason/bricks/list_screen"
+    }
+  }
+}

@@ -1,6 +1,6 @@
 import 'dart:developer';
 
-import 'package:zumra/core/data/api_manager.dart';
+import 'package:{{#snakeCase}}{{app}}{{/snakeCase}}/core/data/api_manager.dart';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';

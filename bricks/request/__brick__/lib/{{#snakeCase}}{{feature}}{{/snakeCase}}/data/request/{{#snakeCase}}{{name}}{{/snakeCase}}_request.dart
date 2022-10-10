@@ -1,4 +1,4 @@
-import 'package:zumra/core/data/api_manager.dart';
+import 'package:{{#snakeCase}}{{app}}{{/snakeCase}}/core/data/api_manager.dart';
 
 {{#request_model}}import '../model/{{#snakeCase}}{{name}}{{/snakeCase}}/{{#snakeCase}}{{name}}{{/snakeCase}}_request_model.dart';{{/request_model}}
 
@@ -19,3 +19,4 @@ class {{#pascalCase}}{{name}}{{/pascalCase}}Request with Request,{{#get}}Get{{/g
   @override
   String get path => '{{{path}}}{{#request_model}}{{#delete}}/${requestModel.id}{{/delete}}{{/request_model}}';
 }
+

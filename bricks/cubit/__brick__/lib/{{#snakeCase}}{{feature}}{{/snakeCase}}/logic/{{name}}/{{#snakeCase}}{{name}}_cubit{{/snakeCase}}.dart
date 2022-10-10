@@ -1,4 +1,4 @@
-import 'package:zumra/core/data/api_manager.dart';
+import 'package:{{#snakeCase}}{{app}}{{/snakeCase}}/core/data/api_manager.dart';
 
 import 'package:bloc/bloc.dart';
 import 'package:equatable/equatable.dart';

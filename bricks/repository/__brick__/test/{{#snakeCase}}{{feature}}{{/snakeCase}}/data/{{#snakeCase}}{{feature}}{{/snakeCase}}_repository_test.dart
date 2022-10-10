@@ -8,7 +8,7 @@ group('{{#pascalCase}}{{name}}{{/pascalCase}}', () {
 should return Right({{#pascalCase}}{{name}}{{/pascalCase}}ResponseModel) when data apimanger return valid data ''',
       () async {
     // arrange
-    when(() => apIsManager.send<{{#pascalCase}}{{name}}{{/pascalCase}}ResponseModel, MessageResponse>(
+    when(() => apIsManager.send<{{#pascalCase}}{{name}}{{/pascalCase}}ResponseModel, MessageResponseModel>(
           request: any(named: 'request'),
           responseFromMap: any(named: 'responseFromMap'),
         )).thenAnswer((_) async => Right({{#pascalCase}}{{name}}{{/pascalCase}}ResponseModelMock.mock));
@@ -20,13 +20,13 @@ should return Right({{#pascalCase}}{{name}}{{/pascalCase}}ResponseModel) when da
   });
 
   test('''
-should return Left(ValidationError, MessageResponse) when data apimanger return invalid data ''',
+should return Left(ValidationError, MessageResponseModel) when data apimanger return invalid data ''',
       () async {
     // arrange
     final failure = ErrorFailure(
         errorStatus: ErrorStatus.validationError,
-        error: MessageResponse(message: 'error'));
-    when(() => apIsManager.send<{{#pascalCase}}{{name}}{{/pascalCase}}ResponseModel, MessageResponse>(
+        error: MessageResponseModel(message: 'error'));
+    when(() => apIsManager.send<{{#pascalCase}}{{name}}{{/pascalCase}}ResponseModel, MessageResponseModel>(
             request: any(named: 'request'),
             responseFromMap: any(named: 'responseFromMap')))
         .thenAnswer((_) async => Left(failure));
@@ -41,7 +41,7 @@ should return Left(ValidationError, MessageResponse) when data apimanger return 
 should return Left(ServiceNotAvailableFailure) when data apimanger throws server exception''',
       () async {
     // arrange
-    when(() => apIsManager.send<{{#pascalCase}}{{name}}{{/pascalCase}}ResponseModel, MessageResponse>(
+    when(() => apIsManager.send<{{#pascalCase}}{{name}}{{/pascalCase}}ResponseModel, MessageResponseModel>(
             request: any(named: 'request'),
             responseFromMap: any(named: 'responseFromMap')))
         .thenAnswer((_) async =>  Left(

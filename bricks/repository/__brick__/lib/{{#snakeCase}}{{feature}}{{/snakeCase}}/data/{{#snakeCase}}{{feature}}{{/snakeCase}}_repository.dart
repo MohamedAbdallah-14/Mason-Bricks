@@ -7,7 +7,7 @@ import 'request/{{#snakeCase}}{{name}}{{/snakeCase}}_request.dart';
   Future<Either<Failure, {{#pascalCase}}{{name}}{{/pascalCase}}ResponseModel>> {{#camelCase}}{{name}}{{/camelCase}}(
       {{#request_model}}{{#pascalCase}}{{name}}{{/pascalCase}}RequestModel requestModel{{/request_model}}) async {
 
-    if (mockApp) {
+    if (mockEnvironment) {
       return Future.delayed(const Duration(milliseconds: 500)).then(
         (value) => Right(
           testMode
